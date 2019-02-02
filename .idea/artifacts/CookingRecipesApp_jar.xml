@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CookingRecipesApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CookingRecipesApp_jar</output-path>
+    <root id="archive" name="CookingRecipesApp.jar">
+      <element id="module-output" name="CookingRecipesApp" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-stdlib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-test.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

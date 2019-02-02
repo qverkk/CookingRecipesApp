@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+      minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.191">
+    <children>
+        <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="170.0">
+            <children>
+                <Label text="Ingredients"/>
+                <ScrollPane prefHeight="340.0" prefWidth="200.0">
+                    <content>
+                        <VBox fx:id="ingredientsVbox" prefWidth="165.0"/>
+                    </content>
+                </ScrollPane>
+                <Button fx:id="addNewIngredientButton" minWidth="170.0" mnemonicParsing="false" prefWidth="170.0"
+                        text="Add new">
+                    <VBox.margin>
+                        <Insets top="5.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </VBox>
+        <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="170.0">
+            <children>
+                <Label text="Proposed meals"/>
+                <ScrollPane prefHeight="389.0" prefWidth="155.0">
+                    <content>
+                        <VBox fx:id="proposedMealsVbox" prefWidth="150.0"/>
+                    </content>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </ScrollPane>
+            </children>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </VBox>
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="390.0" prefWidth="326.0">
+            <children>
+                <Label fx:id="mealNameLbl" text="Meal name"/>
+                <Label fx:id="servingsLabel" text="Servings: 0"/>
+                <Label text="Ingredients:"/>
+                <ScrollPane prefHeight="200.0">
+                    <content>
+                        <VBox fx:id="mealIngredientsVbox"/>
+                    </content>
+                </ScrollPane>
+                <Label text="Instructions"/>
+                <TextArea fx:id="mealInstructionsTextArea" editable="false" prefHeight="200.0" wrapText="true"/>
+            </children>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </VBox>
+    </children>
+</HBox>
